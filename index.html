@@ -332,6 +332,100 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/10/iOS沙盒/" itemprop="url">
+                  iOS沙盒
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-10T16:18:58+08:00" content="2016-07-10">
+              2016-07-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">let homePath = NSHomeDirectory()</div><div class="line">print(homePath)</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/04/Action-methods-vs-normal-methods/" itemprop="url">
                   Action methods vs. normal methods
                 </a>
@@ -376,7 +470,10 @@
       
         
           
-            
+            <p>So what is the difference between an action method and a regular method?<br>Answer: Nothing.<br>An action method is really just the same as any other method. The only special thing is the <code>@IBAction</code> specifier. This allows Interface Builder to see the method so you can connect it to your buttons, sliders, and so on.<br>Other methods, such as viewDidLoad(), do not have the @IBAction specifier. This is a good thing because all kinds of mayhem would occur if you hooked such methods up to your buttons.<br>This is the simple form of an action method:</p>
+<pre><code>@IBAction func showAlert()
+</code></pre><p>You can also ask for a reference to the object that triggered this action, using a parameter:<br>@IBAction func sliderMoved(slider: UISlider)<br>@IBAction func buttonTapped(button: UIButton)<br>But the following method cannot be used as an action from Interface Builder:<br>func updateLabels()<br>It is not marked as @IBAction and as a result Interface Builder can’t see it. To use updateLabels(), you will have to call it yourself.</p>
+
           
         
       
@@ -445,7 +542,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

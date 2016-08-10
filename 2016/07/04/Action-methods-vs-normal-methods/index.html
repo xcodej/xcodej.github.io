@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="哈哈哈哈哈😀">
+<meta name="description" content="So what is the difference between an action method and a regular method?Answer: Nothing.An action method is really just the same as any other method. The only special thing is the @IBAction specifier.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Action methods vs. normal methods">
 <meta property="og:url" content="http://yoursite.com/2016/07/04/Action-methods-vs-normal-methods/index.html">
 <meta property="og:site_name" content="Xcodej">
-<meta property="og:description" content="哈哈哈哈哈😀">
-<meta property="og:updated_time" content="2016-08-04T15:12:45.000Z">
+<meta property="og:description" content="So what is the difference between an action method and a regular method?Answer: Nothing.An action method is really just the same as any other method. The only special thing is the @IBAction specifier.">
+<meta property="og:updated_time" content="2016-08-04T15:17:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Action methods vs. normal methods">
-<meta name="twitter:description" content="哈哈哈哈哈😀">
+<meta name="twitter:description" content="So what is the difference between an action method and a regular method?Answer: Nothing.An action method is really just the same as any other method. The only special thing is the @IBAction specifier.">
 
 
 
@@ -276,7 +276,10 @@
       
 
       
-        
+        <p>So what is the difference between an action method and a regular method?<br>Answer: Nothing.<br>An action method is really just the same as any other method. The only special thing is the <code>@IBAction</code> specifier. This allows Interface Builder to see the method so you can connect it to your buttons, sliders, and so on.<br>Other methods, such as viewDidLoad(), do not have the @IBAction specifier. This is a good thing because all kinds of mayhem would occur if you hooked such methods up to your buttons.<br>This is the simple form of an action method:</p>
+<pre><code>@IBAction func showAlert()
+</code></pre><p>You can also ask for a reference to the object that triggered this action, using a parameter:<br>@IBAction func sliderMoved(slider: UISlider)<br>@IBAction func buttonTapped(button: UIButton)<br>But the following method cannot be used as an action from Interface Builder:<br>func updateLabels()<br>It is not marked as @IBAction and as a result Interface Builder can’t see it. To use updateLabels(), you will have to call it yourself.</p>
+
       
     </div>
 
@@ -311,8 +314,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/04/你好世界/" rel="prev" title="你好世界">
-                你好世界 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/10/iOS沙盒/" rel="prev" title="iOS沙盒">
+                iOS沙盒 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -381,7 +384,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

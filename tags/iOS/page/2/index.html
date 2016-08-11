@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="iOS,Swift,设计模式," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,15 @@
 
 
 
-<meta name="description" content="简介单例模式确保一个指定的类有且只有一个实例被创建。所有对该类的引用全部使用唯一的实例。iOS中常见的单例有NSUserDefaults、UIApplication、NSFileManager等等。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="单例">
-<meta property="og:url" content="http://yoursite.com/2016/08/11/单例/index.html">
+<meta name="description" content="哈哈哈哈哈😀">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xcodej">
+<meta property="og:url" content="http://yoursite.com/tags/iOS/page/2/index.html">
 <meta property="og:site_name" content="Xcodej">
-<meta property="og:description" content="简介单例模式确保一个指定的类有且只有一个实例被创建。所有对该类的引用全部使用唯一的实例。iOS中常见的单例有NSUserDefaults、UIApplication、NSFileManager等等。">
-<meta property="og:updated_time" content="2016-08-11T16:29:57.000Z">
+<meta property="og:description" content="哈哈哈哈哈😀">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="单例">
-<meta name="twitter:description" content="简介单例模式确保一个指定的类有且只有一个实例被创建。所有对该类的引用全部使用唯一的实例。iOS中常见的单例有NSUserDefaults、UIApplication、NSFileManager等等。">
+<meta name="twitter:title" content="Xcodej">
+<meta name="twitter:description" content="哈哈哈哈哈😀">
 
 
 
@@ -114,9 +113,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/11/单例/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/iOS/page/2/"/>
 
-  <title> 单例 | Xcodej </title>
+  <title> 标签: iOS | Xcodej </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +136,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,129 +234,78 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <div id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        iOS
+        <small>标签</small>
+      </h2>
+    </div>
 
     
-      <header class="post-header">
+      
 
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2016/07/10/iOS沙盒/" itemprop="url">
               
-                单例
+                <span itemprop="name">iOS沙盒</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-11T21:57:07+08:00" content="2016-08-11">
-              2016-08-11
-            </time>
-          </span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-07-10T16:18:58+08:00"
+              content="2016-07-10" >
+          07-10
+        </time>
+      </div>
 
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>单例模式确保一个指定的类有且只有一个实例被创建。所有对该类的引用全部使用唯一的实例。<br>iOS中常见的单例有<code>NSUserDefaults</code>、<code>UIApplication</code>、<code>NSFileManager</code>等等。<br><a id="more"></a></p>
-<h2 id="自定义单例"><a href="#自定义单例" class="headerlink" title="自定义单例"></a>自定义单例</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">GuardianManager</span></span>&#123;</div><div class="line">    <span class="comment">// MARK: Singleton</span></div><div class="line">    <span class="keyword">static</span> <span class="keyword">let</span> standardGuardianManager = <span class="type">GuardianManager</span>()</div><div class="line">    <span class="keyword">private</span> <span class="keyword">init</span>()&#123; &#125;</div><div class="line"></div><div class="line">    <span class="comment">// MARK: Methods</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">code</span><span class="params">()</span></span>&#123;</div><div class="line">      <span class="built_in">print</span>(<span class="string">"自定义单例"</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="type">GuardianManager</span>.standardGuardianManager.code()</div></pre></td></tr></table></figure>
-<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>使用<code>private</code>来私有<code>init()</code>方法。目的是为了禁止多余的实例被创建。很自然的，该类需要自己提供一个实例。使用<code>static</code>使<code>standardGuardianManager</code>实例放在<code>堆</code>中。</p>
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/iOS/" rel="tag">#iOS</a>
-          
-            <a href="/tags/Swift/" rel="tag">#Swift</a>
-          
-            <a href="/tags/设计模式/" rel="tag">#设计模式</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/08/11/利用extension减少硬编码/" rel="next" title="利用extension减少硬编码">
-                <i class="fa fa-chevron-left"></i> 利用extension减少硬编码
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
+    
       
-    </div>
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/07/04/Action-methods-vs-normal-methods/" itemprop="url">
+              
+                <span itemprop="name">Action methods vs. normal methods</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-07-04T23:06:23+08:00"
+              content="2016-07-04" >
+          07-04
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+    
   </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/tags/iOS/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/tags/iOS/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -365,10 +313,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -388,17 +332,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -441,17 +376,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义单例"><span class="nav-number">2.</span> <span class="nav-text">自定义单例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用法"><span class="nav-number">2.1.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释"><span class="nav-number">2.2.</span> <span class="nav-text">解释</span></a></li></ol></li></ol></div>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -548,10 +472,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
 
   
 

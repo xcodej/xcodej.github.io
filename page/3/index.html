@@ -86,13 +86,12 @@
 
 <meta name="description" content="哈哈哈哈哈😀">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://xujian.ren/categories/index.html">
+<meta property="og:title" content="Xcodej">
+<meta property="og:url" content="http://xujian.ren/page/3/index.html">
 <meta property="og:site_name" content="Xcodej">
 <meta property="og:description" content="哈哈哈哈哈😀">
-<meta property="og:updated_time" content="2016-08-11T16:33:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="Xcodej">
 <meta name="twitter:description" content="哈哈哈哈哈😀">
 
 
@@ -114,15 +113,9 @@
 
 
 
-  <link rel="canonical" href="http://xujian.ren/categories/"/>
+  <link rel="canonical" href="http://xujian.ren/page/3/"/>
 
-  <title>
-  
-
-  
-    分类 | Xcodej
-  
-</title>
+  <title> Xcodej </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -143,7 +136,9 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -263,20 +258,112 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
 
-  <div id="posts" class="posts-expand">
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
-    
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 1 个分类
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/04/Action-methods-vs-normal-methods/" itemprop="url">
+                  Action methods vs. normal methods
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+        <span class="post-count">174 字| 建议阅读时间: 1 分钟|</span>
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-04T23:06:23+08:00" content="2016-07-04">
+              2016-07-04
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
         </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">4</span></li></ul>
-        </div>
-      </div>
+      </header>
     
-  </div>
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>So what is the difference between an action method and a regular method?<br>Answer: Nothing.<br>An action method is really just the same as any other method. The only special thing is the <code>@IBAction</code> specifier. This allows Interface Builder to see the method so you can connect it to your buttons, sliders, and so on.<br>Other methods, such as viewDidLoad(), do not have the @IBAction specifier. This is a good thing because all kinds of mayhem would occur if you hooked such methods up to your buttons.<br>This is the simple form of an action method:</p>
+<pre><code>@IBAction func showAlert()
+</code></pre><p>You can also ask for a reference to the object that triggered this action, using a parameter:<br>@IBAction func sliderMoved(slider: UISlider)<br>@IBAction func buttonTapped(button: UIButton)<br>But the following method cannot be used as an action from Interface Builder:<br>func updateLabels()<br>It is not marked as @IBAction and as a result Interface Builder can’t see it. To use updateLabels(), you will have to call it yourself.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
 
 
           </div>
@@ -284,10 +371,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
